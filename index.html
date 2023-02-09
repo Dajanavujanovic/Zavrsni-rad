@@ -68,11 +68,11 @@
 
             <form class="contact">
                 <span id="error-message" class="error-message" style="visibility: hidden;">Firstname needs to be at least 2 letters long</span> <br>
-                <input id="firstname" type="text" name="firstname" placeholder="Firstname" class="firstname"> <br>
+                <input id="firstname" type="text" name="firstname" placeholder="Firstname" class="firstname" minlength="2" required> <br>
                 <span id="error-message1" class="error-message" style="visibility: hidden;">Lastname needs to be at least 2 letters long</span><br>
-                <input id="lastname" type="text" name="lastname" placeholder="Lastname" class="lastname"><br>
+                <input id="lastname" type="text" name="lastname" placeholder="Lastname" class="lastname" minlength="2" required><br>
                 <span id="error-message2" class="error-message" style="visibility: hidden;">Phone number needs to be at least 5 numbers long</span><br>
-                <input id="phone-number" type="text" name="phone-number" placeholder="Phone" class="phone-number">
+                <input id="phone-number" type="text" name="phone-number" placeholder="Phone" class="phone-number" minlength="5" required>
                 <button id="btn" class="contact-btn">Contact me</button>
             </form>
         </div>

@@ -8,9 +8,9 @@ const button = document.getElementById("btn")
 const inputFirstname = document.getElementById("firstname")
 const inputLastname = document.getElementById("lastname")
 const inputNumber = document.getElementById("phone-number")
-const errorMessage = document.getElementById('error-message')
-const errorMessage1 = document.getElementById('error-message1')
-const errorMessage2 = document.getElementById('error-message2')
+const errorMessage = document.getElementById("error-message")
+const errorMessage1 = document.getElementById("error-message1")
+const errorMessage2 = document.getElementById("error-message2")
 
 let questionCounter = 0;
 let currentQuestion;
@@ -159,10 +159,12 @@ inputFirstname.addEventListener("input", () => {
     errorMessage.style.visibility = "visible"
     inputFirstname.style.borderColor = "darkred"
     button.disabled = true
+    button.style.backgroundColor = "red"
   } else {
     errorMessage.style.visibility = "hidden"
     inputFirstname.style.borderColor = "black"
     button.disabled = false
+    button.style.backgroundColor = "#009688"
   }
 })
 
@@ -171,10 +173,12 @@ inputLastname.addEventListener("input", () => {
      errorMessage1.style.visibility = "visible"
      inputLastname.style.borderColor = "darkred"
      button.disabled = true
+     button.style.backgroundColor = "red"
    } else {
      errorMessage1.style.visibility = "hidden"
      inputLastname.style.borderColor = "black"
      button.disabled = false
+     button.style.backgroundColor = "#009688"
    }
  })
 
@@ -183,10 +187,12 @@ inputLastname.addEventListener("input", () => {
      errorMessage2.style.visibility = "visible"
      inputNumber.style.borderColor = "darkred"
      button.disabled = true
+     button.style.backgroundColor = "red"
    } else {
      errorMessage2.style.visibility = "hidden"
      inputNumber.style.borderColor = "black"
      button.disabled = false
+     button.style.backgroundColor = "#009688"
    }
  })
 
