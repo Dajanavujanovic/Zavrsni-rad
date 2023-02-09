@@ -1,0 +1,82 @@
+<!doctype html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>General Knowledge Quiz</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="home-box custom-box ">
+        <img src="photos\trivia challenge.png" alt="QuizTime" class="trivia">
+        <h1>Let's put your knowledge to the test. <br> There are <span class="total-question">10</span> questions, each question only has one correct answer. Your score will be displayed at the end of the game. </h1>
+        <button type="button" class="btn" onclick="startQuiz()" >Start Quiz</button>
+    </div>
+
+        <div class="quiz-box custom-box hide " >
+
+            <div class="question-number">
+
+            </div>
+
+            <div class="question-text">
+
+            </div>
+
+            <div class="option-container">
+
+            </div>
+
+            <div class="next-question-btn">
+            <button type="button" class="btn" onclick="next()" >Next</button>
+            </div>
+
+        </div>
+
+        <div class="result-box custom-box hide">
+            <h1>Quiz Result</h1>
+            <table>
+                <tr>
+                    <td>Total Question</td>
+                    <td><span class="total-question"></span></td>
+                </tr>
+                <tr>
+                    <td>Attempts</td>
+                    <td><span class="total-attempt"></span></td>
+                </tr>
+                <tr>
+                    <td>Correct</td>
+                    <td><span class="total-correct"></span></td>
+                </tr>
+                <tr>
+                    <td>Wrong</td>
+                    <td><span class="total-wrong"></span></td>
+                </tr>
+                <tr>
+                    <td>Percentage</td>
+                    <td><span class="percentage"></span></td>
+                </tr>
+                <tr>
+                    <td>Total Score</td>
+                    <td><span class="total-score"></span></td>
+                </tr>
+            </table>
+            <button type="button" class="btn" onclick="tryAgainQuiz()">Try Again</button>
+            <button type="button" class="btn" onclick="goToHome()">Go To Home</button>
+
+            <form class="contact">
+                <span id="error-message" class="error-message" style="visibility: hidden;">Firstname needs to be at least 2 letters long</span> <br>
+                <input id="firstname" type="text" name="firstname" placeholder="Firstname" class="firstname"> <br>
+                <span id="error-message1" class="error-message" style="visibility: hidden;">Lastname needs to be at least 2 letters long</span><br>
+                <input id="lastname" type="text" name="lastname" placeholder="Lastname" class="lastname"><br>
+                <span id="error-message2" class="error-message" style="visibility: hidden;">Phone number needs to be at least 5 numbers long</span><br>
+                <input id="phone-number" type="text" name="phone-number" placeholder="Phone" class="phone-number">
+                <button id="btn" class="contact-btn">Contact me</button>
+            </form>
+        </div>
+    <script src="question.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
